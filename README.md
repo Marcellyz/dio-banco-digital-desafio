@@ -1,5 +1,5 @@
 # Banco Digital Desafio DIO 💰🪙🚀
-Este repositório é destinnado ao estudo de Programação Orientada a Objeto, onde realizei a implementação de um pequeno sistema do bootcamp, utilizando classes, Listas, etc.
+Este repositório foi criado para o estudo de Programação Orientada a Objetos, onde desenvolvi a implementação de um sistema bancário simples, utilizando conceitos como classes, classes abstratas, interfaces e listas.
 
 ## 📍Stack utilizada
 
