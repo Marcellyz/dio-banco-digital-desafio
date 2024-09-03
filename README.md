@@ -1,18 +1,28 @@
-## Getting Started
+# Banco Digital Desafio DIO 💰🪙🚀
+Este repositório é destinnado ao estudo de Programação Orientada a Objeto, onde realizei a implementação de um pequeno sistema do bootcamp, utilizando classes, Listas, etc.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📍Stack utilizada
 
-## Folder Structure
+<div>
+  <img align="inline_block" alt="java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+</div>
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 📦 Estrutura do projeto
+````
+dio-banco-digital-desafio/
+├── .idea/
+├── .vscode/
+├── bin/                              
+├── src/                               
+|   ├── banco/
+|   |  ├── cliente/
+|   |  |  └── Cliente.java
+|   |  ├── contas/
+|   |  |  ├── Conta.java
+|   |  |  ├── ContaCorrente.java
+|   |  |  └── ContaPoupanca.java
+|   |  ├── Banco.java
+|   |  └── IConta.java
+|   └── Main.java
+└── ... (demais diretórios e arquivos)
+````
