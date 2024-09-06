@@ -26,3 +26,56 @@ dio-banco-digital-desafio/
 |   └── Main.java
 └── ... (demais diretórios e arquivos)
 ````
+
+## 📱 Diagrama de Classes
+````mermaid
+classDiagram
+class Cliente{
+    - String nome
+    + getNome() String
+    + setNome(String Nome)
+}
+class ContaCorrente{
+    + imprimirConta()
+}
+class ContaPoupanca{
+    + imprimirConta()
+}
+class Banco{
+    - String nome
+    - List~Conta~ contas
+    + getNome() String
+    + setNome(String Nome) 
+    + getContas() List~Conta~
+    + setContas(List~Conta~ contas)
+}
+class IConta{
+    <<Interface>>
+    +sacar(double valor)
+    +transferir(double valor)
+    +depositar(double valor, Conta contaDestino)
+    +extratoConta()
+}
+class Conta{
+    #int agencia
+    #int numeroConta
+    #saldo double
+    #cliente Cliente
+    -int AGENCIA_PADRAO = 1$
+    -int sequencial = 1$
+    Conta(Cliente cliente) 
+    +getAgencia() int
+    +getNumeroConta() int 
+    +getSaldo() double
+}
+class Main
+
+Conta <|-- ContaCorrente
+Conta <|-- ContaPoupanca
+Conta -- Cliente
+IConta <|.. Conta
+Conta .. Banco
+Main *-- Cliente
+Main *-- Conta
+Main *-- IConta
+```
